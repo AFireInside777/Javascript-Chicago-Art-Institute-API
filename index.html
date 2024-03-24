@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <title>JavaScript AIC API</title>
+</head>
+<body>
+
+    <header id="pageheader" style="display: flex; margin-bottom: 35px;">
+        <h1 style="color: whitesmoke; margin: auto">Welcome to my favorite paintings from the Art Institute of Chicago!</h1>
+    </header>
+
+    <section id="instructions">
+        Please use the "Previous Work" and "Next Work" buttons below to cycle through the paintings. All information provided by the Art Institute of Chicago API.
+    </section>
+    
+    <section id="mainsec">
+        <div id="picdisplay">
+            <div id="pic">
+                <img srcset="static/images/TwoYoungWomen20958.jpg 3.74x" id="photo";>
+            </div>
+            <div id="buttondisplay">
+                <button type="button" onclick="previousWork()">Previous Work</button>
+                <button type="button" onclick="nextWork()">Next Work</button>
+            </div>
+        </div>
+        <div id="workinfo">
+            <header>
+                <h3 id="arttitle">Info About the Work</h3>
+            </header>
+            <div id="infobox">
+                <p id="artist_name"></p>
+                <p id="date_display">
+                </p>
+                <p id="place_of_origin">
+                </p>
+                <p id="artworktype"></p>
+                <p id="classification_title">
+                </p>
+                <p id="dimensions">
+                </p>
+                <p id="description">
+                </p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
