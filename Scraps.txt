@@ -1,7 +1,0 @@
-<section style="background-color: black">
-        
-        
-        <div id="buttonholder" class="picdisplay">
-            <button type="button" onclick="console.log('Works')">Click me.</button>
-        </div>
-    </section>
